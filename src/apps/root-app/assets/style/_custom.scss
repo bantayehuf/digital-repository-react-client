@@ -1,0 +1,119 @@
+// Here you can add other styles
+
+// body{
+//     font-family: "Noto Serif", Georgia, "Times New Roman", Times, serif;
+// }
+
+.bg-sre {
+    background-color: $sreColor;
+}
+
+.text-sre {
+    color: $sreColor;
+}
+
+.border-sre {
+    color: $sreColor;
+}
+
+.sre-e {
+    accent-color: red;
+}
+
+.filepond--credits {
+    display: none;
+}
+
+.pagination .page-item .page-link {
+    color: $sreColor;
+}
+
+.pagination .page-item.active .page-link {
+    color: white;
+    background-color: $sreColor;
+    border-color: $sreColor;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: rgb(150, 150, 150);
+}
+
+.infinite-page-loader-main {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.infinite-progress-loader {
+    width: 100%;
+    position: relative;
+}
+
+.infinite-progress-loader:before {
+    content: '';
+    background: #0F458533;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+}
+
+.infinite-progress-loader .infinite-progress-loader-bar {
+    background: $sreColor;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    animation: progressBar 1s linear infinite;
+}
+
+@keyframes progressBar {
+    0% {
+        left: 0%;
+        right: 100%;
+        width: 0%;
+    }
+
+    10% {
+        left: 0%;
+        right: 75%;
+        width: 25%;
+    }
+
+    90% {
+        right: 0%;
+        left: 75%;
+        width: 25%;
+    }
+
+    100% {
+        left: 100%;
+        right: 0%;
+        width: 0%;
+    }
+}
+
+.sre-hover:hover {
+    background-color: $sreColor !important;
+    color: blanchedalmond !important;
+    border: 1px solid $sreColor !important;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+textarea:focus,
+textarea.btn:active,
+select:focus,
+select:active,
+input:focus,
+input:active {
+    outline-color: $sreColor !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 5px $sreColor !important;
+}

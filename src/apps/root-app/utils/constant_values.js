@@ -1,0 +1,9 @@
+const SERVER_ASSDRESS = "http://127.0.0.1:8080"
+const BASE_API_URL = `${SERVER_ASSDRESS}/api`;
+const STATIC_MEDIA_BASE_URL = `${SERVER_ASSDRESS}/stream`;
+
+export {
+    SERVER_ASSDRESS,
+    BASE_API_URL,
+    STATIC_MEDIA_BASE_URL
+};

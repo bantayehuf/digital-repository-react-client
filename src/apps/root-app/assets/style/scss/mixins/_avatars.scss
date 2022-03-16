@@ -1,0 +1,12 @@
+@use "sass:math";
+
+@mixin avatar($width, $status-width) {
+  width: $width;
+  height: $width;
+  font-size: math.div($width, 2.5);
+
+  .c-avatar-status {
+    width: $status-width;
+    height: $status-width;
+  }
+}

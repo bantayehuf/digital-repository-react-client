@@ -1,0 +1,15 @@
+// If you want to override variables do it here
+@import "variables";
+
+$theme-colors: (
+  "sre": $sreColor
+);
+// @import '@coreui/coreui/scss/coreui';
+@import "./scss/coreui";
+
+
+// Some temp fixes
+@import "fixes";
+
+// If you want to add something do it here
+@import "custom";
